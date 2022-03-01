@@ -39,6 +39,9 @@ ul{
     display: flex;
     gap: 40px;
 }
+.inactive{
+    color: var(--hero-sec-color);
+}
 .main{
     display: flex;
     background-color: #1f2937;

@@ -5,56 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin-landing-page</title>
+    <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">Lorem ipsum</div>
+    <div class="header" >
+        <div class="logo"><a href="#home">Trace Sol</a></div>
         <nav>
             <ul>
-                <li>link 1</li>
-                <li>link 2</li>
-                <li>link 3</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#s">Subscribe</a></li>
             </ul>
         </nav>
     </div>
-    <div class="main">
+    <div class="main" id="home">
         <div class="main-content">
-            <div class="heading">heading Lorem ipsum</div>
-            <div class="sub-heading">sub heading Lorem ipsum</div>
-            <button>Sign Up</button>
+            <div class="heading">Life Should Be Easy.</div>
+            <div class="sub-heading">financial transaction remotely using a mobile device such as a smartphone or tablet.</div>
+            <button id="cta-button">Get Started</button>
+            
         </div>
             <div class="image">
-                <img src="#" alt="404 img landing page">
+                <img src="./images/undraw_pay_online_b-1-hk.svg" alt="404 img landing page" height="600px" width="500px">
             </div>
+           
     </div>
-    <div class="information">
-        <div class="cards">1
-            <img src="#" alt="404 img1 info">
-            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+    
+    <div class="information" id="about">
+
+        <div class="card-title">
+            <div class="card-heading">How it works</div>
+            <div class="card-subheading"><p>Mobile banking differs from mobile payments, which involves the use of a mobile device.</p></div>
         </div>
-        <div class="cards">2
-            <img src="#" alt="404 img2 info">
-            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+        <div class="flex-cards">
+            <div class="cards">
+                <img src="./images/Information.svg" alt="404 img1 info">
+                <div class="info-heading">Information</div>
+                <div class="info-subheading">Enter your information ensure your details safe and more secure.</div>
+            </div>
+            <div class="cards">
+                <img src="./images/Security.svg" alt="404 img2 info">
+                <div class="info-heading">Data Secure</div>
+                <div class="info-subheading">Sending money faster & easier with end to end encryption.</div>
+            </div>
+            <div class="cards">
+                <img src="./images/add new.svg" alt="404 img4 info">
+                <div class="info-heading">Add Cards</div>
+                <div class="info-subheading">Add multiple cards and track your daily expense with quality interface.</div>
+                
+            </div>
+        </div>    
+    </div>
+    <div class="about-section">
+        <div class="about-model">
+            <img src="images/model.svg">
         </div>
-        <div class="cards">3
-            <img src="#" alt="404 img3 info">
-            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
-        </div>
-        <div class="cards">4
-            <img src="#" alt="404 img4 info">
-            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+        <div class="about-main">
+            <div class="about-heading">Download Now</div>
+            <div class="about-subheading">Download Trace Sol mobile banking app for IOS and android. It helps you banking quickly and more smartly.</div>
+            <div class="store-buttons">
+                <button class="store">App Store</button>
+                <button class="store">Play Store</button>
+            </div>
         </div>
     </div>
-    <div class="quote">
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquam necessitatibus sint soluta molestiae libero maxime explicabo, repellendus reprehenderit, hic eligendi enim expedita accusantium! Dolore totam laudantium repellendus velit temporibus!</div>
-    </div>
-    <div class="cta">
-        <div>call to action lorem ipsum</div>
-        <div>cta sub lorem ipsum</div>
-        <button>Sign Up</button>
+    <hr />
+    <div class="card-title">
+        <div class="card-heading">Subscribe Newsletter</div>
+        <div class="card-subheading">financial transactions remotely using a mobile</div>
+        <div class="input-section">
+            <input class="input-email" placeholder="Enter your email." type="email" />
+            <button class="store">Subscribe</button>
+        </div>
     </div>
     <div class="footer">
-        <div> copyright </div>
+        <div> Copyright © 2022 </div>
     </div>
 
 </body>

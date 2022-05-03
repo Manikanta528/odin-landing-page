@@ -78,6 +78,12 @@ ul{
     border-radius: 6px;
     font-weight: 800;
 }
+#cta-button:hover{
+    background-color: #0062ff;
+}
+#cta-button:active{
+    background-color: #305ca4;
+}
 .scroll{
     align-self: baseline;
     align-text: center;
@@ -167,6 +173,12 @@ p{
     margin-top: 24px;
     font-size: 18px;
     font-weight: 700;
+}
+.store:hover{
+    background-color: #3b3b3b;
+}
+.store:active{
+    background-color: #202020;
 }
 hr{
     margin: 0px 80px;

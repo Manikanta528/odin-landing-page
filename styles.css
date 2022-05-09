@@ -42,6 +42,12 @@ ul{
 .inactive{
     color: var(--hero-sec-color);
 }
+.inactive:hover{
+    color: #e5e7eb;
+}
+.inactive:active{
+    color: #95979b;
+}
 .main{
     display: flex;
     background-color: #1f2937;

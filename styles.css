@@ -1,12 +1,14 @@
-@import url('https //fonts.googleapis.com/css family=poppins');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 :root{
     --dark-bg-color: #1f2937;
     --hero-main-size: 48px;
     --hero-main-weight: 800;
     --hero-main-color: #f9faf8;
     --hero-sec-size: 18px;
-    --hero-sec-color: #a0a0a0;
-    
+    --hero-sec-color: #a0a0a0;   
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     font-family: poppins;
@@ -51,12 +53,12 @@ ul{
 .main{
     display: flex;
     background-color: #1f2937;
-    height: 92vh ;
+    height: 92% ;
     padding: 0px 80px;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-   
+    flex-wrap: wrap;  
 }
 .main-content{
     display: flex;
@@ -64,7 +66,7 @@ ul{
     justify-content: center;
     gap: 24px;
     flex-shrink: 0;
-    max-width: 400px;
+    max-width: 450px;
 }
 .heading{
     color: var(--hero-main-color);
@@ -86,14 +88,16 @@ ul{
 }
 #cta-button:hover{
     background-color: #0062ff;
+    position: relative;
+    bottom: 4px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 #cta-button:active{
     background-color: #305ca4;
 }
 .scroll{
     align-self: baseline;
-    align-text: center;
-    
+    align-text: center;   
 }
 .image{
     flex-shrink: 0;
@@ -101,7 +105,7 @@ ul{
 }
 .information{
     background-color: #ffffff;
-    height: 80vh;
+    height: 80%;
 }
 .card-title{
     display: flex;
@@ -114,7 +118,6 @@ p{
     text-align: center;
 }
 .card-heading{
-    
     font-size: 42px;
     font-weight: 600;
     margin-top: 32px;
@@ -125,35 +128,43 @@ p{
 }
 .flex-cards{
     display: flex;
+    justify-content: center;
     padding: 24px 80px;
     gap: 32px;
+    flex-wrap: wrap;
 }
 .cards{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 .info-heading{
+    
     margin-top: 24px;
     margin-bottom: 8px;
     font-size: 20px;
     font-weight: 600;
+
 }
 .info-subheading{
+    width: 192px;
     font-size: 16px;
     color: var(--hero-sec-color);
     text-align: center;
     padding: 0px 40px;
 }
 .about-section{
+    height: 40%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex: wrap;
 }
 .about-main{
     display: flex;
     flex-direction: column;
-    padding-right: 80px;
+    padding: 80px;
 }
 .about-heading{
     font-size: 32px;
@@ -163,25 +174,32 @@ p{
 .about-subheading{
     font-size: 18px;
     margin-bottom: 24px;
+    width: 400px;
     color: var(--hero-sec-color);
 }
 .store-buttons{
     display: flex;
     gap: 32px;
+    
 }
 .store{
     flex-shrink: 0;
-    padding: 24px 32px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 16px;
+    border-radius: 8px;
     background-color: #202020;
     color: #ffffff;
     margin-top: 24px;
     font-size: 18px;
     font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .store:hover{
     background-color: #3b3b3b;
+    position: relative;
+    bottom: 4px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .store:active{
     background-color: #202020;
@@ -192,8 +210,13 @@ hr{
     background-color: #e7e6e6;
     border: none;
 }
+.input-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .input-email{
-    flex-shrink: 0;
     padding: 24px 32px;
     border: none;
     border-radius: 16px;
@@ -202,7 +225,7 @@ hr{
     margin-top: 24px;
     font-size: 18px;
     font-weight: 700;
-    width: 20vw;
+    width: 60%;
     margin-right: 18px;
 }
 .footer{
